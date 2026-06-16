@@ -32,23 +32,23 @@ Key takeaways:
 
 ---
 
-## 📊 Key Findings
+##  Key Findings
 
 | Metric | Finding |
 |--------|---------|
-| 🏆 Best on-time carrier | YX (Endeavor Air) — 84.7% |
-| 📉 Worst on-time carrier | F9 (Frontier) — 70.2% |
-| 🔁 Most common delay cause | carrier_delay — 788,965 flights affected |
-| ⏱️ Most severe delay cause | late_aircraft_delay — 5.93 min avg per flight |
-| 🕐 Peak delay hour | 20:00 — avg 21.4 min, 68.9% OTP |
-| 🛫 Best departure hour | 05:00 — avg 5.2 min, 90.0% OTP |
-| 🌦️ Worst season | Summer — avg 18.2 min delay |
-| 🍂 Best season | Autumn — avg 6.1 min delay |
-| ✅ Best catch-up carrier | WN (Southwest) — 32.9% of late departures still arrive on time |
-| ❌ Highest cancellation rate | F9 (Frontier) — 2.32% |
-| ✅ Lowest cancellation rate | WN (Southwest) — 0.83% |
-| 🏙️ Most congested airport | JFK — congestion score 30.2 min |
-| ✈️ Busiest airport | ATL — 341,910 flights |
+|  Best on-time carrier | YX (Endeavor Air) — 84.7% |
+|  Worst on-time carrier | F9 (Frontier) — 70.2% |
+|  Most common delay cause | carrier_delay — 788,965 flights affected |
+|  Most severe delay cause | late_aircraft_delay — 5.93 min avg per flight |
+|  Peak delay hour | 20:00 — avg 21.4 min, 68.9% OTP |
+|  Best departure hour | 05:00 — avg 5.2 min, 90.0% OTP |
+|  Worst season | Summer — avg 18.2 min delay |
+|  Best season | Autumn — avg 6.1 min delay |
+|  Best catch-up carrier | WN (Southwest) — 32.9% of late departures still arrive on time |
+|  Highest cancellation rate | F9 (Frontier) — 2.32% |
+|  Lowest cancellation rate | WN (Southwest) — 0.83% |
+|  Most congested airport | JFK — congestion score 30.2 min |
+|  Busiest airport | ATL — 341,910 flights |
 
 ---
 
