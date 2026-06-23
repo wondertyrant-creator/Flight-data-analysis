@@ -323,4 +323,4 @@ The highest average total delay flights are dominated by specific flight-number/
 
 ---
 
-*Analysis conducted using Python, Pandas, Matplotlib, and Seaborn. Data sourced from the Bureau of Transportation Statistics On-Time Performance dataset (full year 2024, 6,192,585 flights).*
+*Analysis conducted using Python, Pandas, Matplotlib, and Seaborn. Data sourced from https://www.kaggle.com/datasets/hrishitpatil/flight-data-2024/data*
