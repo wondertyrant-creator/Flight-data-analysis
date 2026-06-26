@@ -1,14 +1,14 @@
-# ✈️ US Flight Delay Analysis 2024
+# ✈️US Flight Delay Analysis 2024
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7+-11557c)
-![Seaborn](https://img.shields.io/badge/Seaborn-0.12+-4c9be8)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+![Python]
+![Pandas]
+![Matplotlib]
+![Seaborn]
+![Jupyter]
 
 A comprehensive exploratory data analysis of US domestic flight performance in 2024, covering **delays, cancellations, airport congestion, and carrier performance** across thousands of routes.
 
-📄 For the full breakdown of findings, recommendations, and limitations see [INSIGHTS.md](INSIGHTS.md)
+ For the full breakdown of findings, recommendations, and limitations see [INSIGHTS.md](INSIGHTS.md)
 
 ---
 
@@ -16,7 +16,7 @@ A comprehensive exploratory data analysis of US domestic flight performance in 2
 
 ---
 
-## 🔍 Analysis Covered
+##  Analysis Covered
 
 **Airport Analysis**
 - Busiest departure airports by flight volume
@@ -67,11 +67,10 @@ A comprehensive exploratory data analysis of US domestic flight performance in 2
 ## 📁 Project Structure
 
 ```
-├── flight_analysis_2024.ipynb     # Notebook with full outputs (open in Colab)
-├── flight_analysis_2024.py        # Clean Python script (11 sections)
-├── INSIGHTS.md                    # Full findings, recommendations & limitations
-├── INSIGHTS.txt                   # Plain text version of insights document
-├── images/                        # Chart exports
+├── flight_analysis_2024.ipynb    
+├── flight_analysis_2024.py       
+├── INSIGHTS.md                    
+├── images/                       
 │   ├── otp_by_carrier.png
 │   ├── delay_heatmap.png
 │   ├── monthly_delay_trend.png
@@ -88,17 +87,25 @@ A comprehensive exploratory data analysis of US domestic flight performance in 2
 ## 🚀 How to Run
 
 **In Google Colab (recommended)**
-1. Upload `flight_data_2024.csv` to your Google Drive
-2. Open `flight_analysis_2024.ipynb` and click the **Open in Colab** badge at the top
-3. Mount Google Drive and update the file path in Section 1:
-```python
+1. Open `flight_analysis_2024.ipynb` and click the **Open in Colab** badge at the top
+2. Upload `flight_data_2024.csv` in google colab session
+3. Run the code:
+```
+
+```
+
+> **Note:** The dataset is ~6.19 million rows. Uploading directly to Colab's `/content/` folder might fail — in which case 
+In Google Colab (recommended)
+
+
+1.Upload flight_data_2024.csv to your Google Drive
+2.Open flight_analysis_2024.ipynb and click the Open in Colab badge at the top
+3.Mount Google Drive and update the file path in Section 1:
+
 from google.colab import drive
 drive.mount('/content/drive')
 df = pd.read_csv('/content/drive/MyDrive/flight_data_2024.csv', low_memory=False, on_bad_lines='skip')
-```
-4. Run all cells top to bottom
 
-> **Note:** The dataset is ~6.19 million rows. Uploading directly to Colab's `/content/` folder will fail — Google Drive is required.
 
 **As a Python script**
 1. Clone the repo
