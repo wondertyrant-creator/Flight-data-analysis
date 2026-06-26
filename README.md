@@ -90,22 +90,19 @@ A comprehensive exploratory data analysis of US domestic flight performance in 2
 1. Open `flight_analysis_2024.ipynb` and click the **Open in Colab** badge at the top
 2. Upload `flight_data_2024.csv` in google colab session
 3. Run the code:
-```
-
-```
 
 > **Note:** The dataset is ~6.19 million rows. Uploading directly to Colab's `/content/` folder might fail — in which case 
-In Google Colab (recommended)
-
+In Google Colab (recommended) if so:
 
 1.Upload flight_data_2024.csv to your Google Drive
 2.Open flight_analysis_2024.ipynb and click the Open in Colab badge at the top
 3.Mount Google Drive and update the file path in Section 1:
-
+```
 from google.colab import drive
 drive.mount('/content/drive')
 df = pd.read_csv('/content/drive/MyDrive/flight_data_2024.csv', low_memory=False, on_bad_lines='skip')
 
+```
 
 **As a Python script**
 1. Clone the repo
