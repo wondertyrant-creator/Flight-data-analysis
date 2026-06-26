@@ -53,9 +53,9 @@ A comprehensive exploratory data analysis of US domestic flight performance in 2
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
-- **Python 3.10+**
+- **Python**
 - **Pandas** — data manipulation and aggregation
 - **NumPy** — numerical operations
 - **Matplotlib** — charting and visualisation
@@ -64,7 +64,7 @@ A comprehensive exploratory data analysis of US domestic flight performance in 2
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── flight_analysis_2024.ipynb    
@@ -84,7 +84,7 @@ A comprehensive exploratory data analysis of US domestic flight performance in 2
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 **In Google Colab (recommended)**
 1. Open `flight_analysis_2024.ipynb` and click the **Open in Colab** badge at the top
@@ -116,6 +116,6 @@ Sections 1–4 handle loading, cleaning, and feature engineering. Sections 5–9
 
 ---
 
-## 📌 Data Source
+## Data Source
 
 https://www.kaggle.com/datasets/hrishitpatil/flight-data-2024/data?select=flight_data_2024.csv
