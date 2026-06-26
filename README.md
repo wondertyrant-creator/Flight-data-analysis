@@ -1,0 +1,114 @@
+# ✈️ US Flight Delay Analysis 2024
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7+-11557c)
+![Seaborn](https://img.shields.io/badge/Seaborn-0.12+-4c9be8)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+
+A comprehensive exploratory data analysis of US domestic flight performance in 2024, covering **delays, cancellations, airport congestion, and carrier performance** across thousands of routes.
+
+📄 For the full breakdown of findings, recommendations, and limitations see [INSIGHTS.md](INSIGHTS.md)
+
+---
+
+![Delay Heatmap](images/delay_heatmap.png)
+
+---
+
+## 🔍 Analysis Covered
+
+**Airport Analysis**
+- Busiest departure airports by flight volume
+- Longest taxi-out times by airport
+- Composite congestion scoring (taxi-out + NAS delay)
+- Congestion patterns by time of day
+- Late aircraft ripple effect origins
+
+**Carrier Analysis**
+- Mean vs median departure delay (outlier-adjusted)
+- Delay magnitude distribution — not just averages, but how *bad* delays get
+- On-time arrival performance (industry standard: arr_delay ≤ 15 min)
+- Cancellation rates and cancellation reason breakdown
+- Schedule padding strategy and its effectiveness
+- Catch-up factor — how often carriers recover from a late departure
+- Ground speed vs short/long-haul fleet mix
+- Weekend vs weekday performance penalty
+
+**Delay Cause Analysis**
+- Frequency vs severity breakdown across all five BTS delay categories
+- Seasonal cause breakdown (weather vs carrier vs NAS across seasons)
+- Time-of-day OTP — quantifying the morning-to-evening reliability drop
+
+**Temporal Patterns**
+- Full day-of-week breakdown
+- Weekday vs weekend comparison with cause-level detail
+- Monthly and seasonal trends
+
+**Route Analysis**
+- Best and worst routes for on-time arrival (min 50 flights filter)
+- Distance band analysis — delay and OTP % by mileage range
+- Most at-risk individual flights by average total delay
+- Most diverted routes
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python 3.10+**
+- **Pandas** — data manipulation and aggregation
+- **NumPy** — numerical operations
+- **Matplotlib** — charting and visualisation
+- **Seaborn** — heatmaps and statistical plots
+- **Google Colab** — development environment
+
+---
+
+## 📁 Project Structure
+
+```
+├── flight_analysis_2024.ipynb     # Notebook with full outputs (open in Colab)
+├── flight_analysis_2024.py        # Clean Python script (11 sections)
+├── INSIGHTS.md                    # Full findings, recommendations & limitations
+├── INSIGHTS.txt                   # Plain text version of insights document
+├── images/                        # Chart exports
+│   ├── otp_by_carrier.png
+│   ├── delay_heatmap.png
+│   ├── monthly_delay_trend.png
+│   ├── delay_causes.png
+│   ├── congestion_by_hour.png
+│   ├── padding_effectiveness.png
+│   ├── cancellation_rate.png
+│   └── distance_otp.png
+└── README.md
+```
+
+---
+
+## 🚀 How to Run
+
+**In Google Colab (recommended)**
+1. Upload `flight_data_2024.csv` to your Google Drive
+2. Open `flight_analysis_2024.ipynb` and click the **Open in Colab** badge at the top
+3. Mount Google Drive and update the file path in Section 1:
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+df = pd.read_csv('/content/drive/MyDrive/flight_data_2024.csv', low_memory=False, on_bad_lines='skip')
+```
+4. Run all cells top to bottom
+
+> **Note:** The dataset is ~6.19 million rows. Uploading directly to Colab's `/content/` folder will fail — Google Drive is required.
+
+**As a Python script**
+1. Clone the repo
+2. Update the file path in Section 1 to point to your local copy of `flight_data_2024.csv`
+3. Run `python flight_analysis_2024.py`
+
+Sections 1–4 handle loading, cleaning, and feature engineering. Sections 5–9 are the analyses. Section 10 generates all charts. Section 11 prints a summary of key findings.
+
+---
+
+## 📌 Data Source
+
+https://www.kaggle.com/datasets/hrishitpatil/flight-data-2024/data?select=flight_data_2024.csv
