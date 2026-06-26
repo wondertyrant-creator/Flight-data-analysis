@@ -1,10 +1,10 @@
-# ✈️US Flight Delay Analysis 2024
+# US Flight Delay Analysis 2024
 
-![Python]
-![Pandas]
-![Matplotlib]
-![Seaborn]
-![Jupyter]
+Python
+Pandas
+Matplotlib
+Seaborn
+Jupyter
 
 A comprehensive exploratory data analysis of US domestic flight performance in 2024, covering **delays, cancellations, airport congestion, and carrier performance** across thousands of routes.
 
