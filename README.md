@@ -6,7 +6,7 @@ Matplotlib
 Seaborn
 Jupyter
 
-A comprehensive exploratory data analysis of US domestic flight performance in 2024, covering **delays, cancellations, airport congestion, and carrier performance** across thousands of routes.
+Analysed more than 6.1 million US domestic flight records using Python and Pandas to investigate airline performance, airport congestion, operational delays, and cancellation patterns. Produced a comprehensive exploratory analysis with statistical comparisons, feature engineering, and data visualisations to identify the operational drivers of flight reliability and network performance.
 
  For the full breakdown of findings, recommendations, and limitations see [INSIGHTS.md](INSIGHTS.md)
 
